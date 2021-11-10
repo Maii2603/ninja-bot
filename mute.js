@@ -12,7 +12,7 @@ function successCreateRole(msg, bot, role) {
 function setRoleInChannels(msg, bot, role) {
   const arrayOfChannels = Array.from(msg.channel.guild.channels.values());
   const channels = arrayOfChannels.forEach(channel => {
-    return bot.editChannelPermission(channel.id, role, BigInt(1024), BigInt(2048), "role");
+    return bot.editChannelPermission(channel.id, role, BigInt(1), BigInt(2048), "role");
   })
 }
 
