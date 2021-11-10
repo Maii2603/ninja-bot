@@ -12,7 +12,7 @@ function sendWelcomeMessages(id,description,member,bot){
       thumbnail:{
         url:member.avatarURL
       }, 
-      description:`| <@${member.id}> |\n\n${description}`, 
+      description:`${description}`, 
       color:0x00ffff
     }
   }
