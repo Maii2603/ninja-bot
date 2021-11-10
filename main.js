@@ -1,6 +1,6 @@
 const axios = require("axios");
 const Eris = require("eris");
-const bot = new Eris(`Bot ${BOT_TOKEN}`, {
+const bot = new Eris(`Bot ${process.env.BOT_TOKEN}`, {
   intents: [
   "guilds",
   "guildMessages",
